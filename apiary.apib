@@ -1,38 +1,183 @@
 FORMAT: 1A
-HOST: http://www.google.com
+HOST: http://apinew.melhor.ninja
 
-# jobeet
-Notes API is a *short texts saving* service similar to its physical paper presence on your table.
+# Melhor Menu
+Resource to list currently resgistereds users.
 
-# Group Notes
-Notes related resources of the **Notes API**
+# Group Users
+Users related resources of the **Melhor Menu API**
 
-## Notes Collection [/notes]
-### List all Notes [GET]
+## Users Collection [/v1/users]
+### List all Users [GET]
 + Response 200 (application/json)
+    
+        {
+            "status": true,
+            "message": "Success listing Users.",
+            "data": [
+                {
+                    "id": 1,
+                    "name": "Jogging",
+                    "surname": " in park",
+                    "display_name": "Jogging in park",
+                    "slug": "jogging-in-park",
+                    "email": "jogging@inpark.com",
+                    "token": ":OANDoasd89asdupbo;asd973rjk-9se-90afkn",
+                    "fid": "879565738",
+                    "district": "Centro",
+                    "city": "Rio de Janeiro",
+                    "state": "RJ",
+                    "phone": "552122222222",
+                    "mobile_phone": "5521999999999",
+                    "status": "confirmed",
+                    "is_active": "1",
+                    "created_at": "2014-08-12 12:34:45",
+                    "updated_at": "2014-08-12 14:14:02",
+                    "deleted_at": ""
+                },
+                {
+                    "id": 2,
+                    "name": "Jogging",
+                    "surname": " in park",
+                    "display_name": "Jogging in park",
+                    "slug": "jogging-in-park",
+                    "email": "jogging@inpark.com",
+                    "token": ":OANDoasd89asdupbo;asd973rjk-9se-90afkn",
+                    "fid": "879565738",
+                    "district": "Centro",
+                    "city": "Rio de Janeiro",
+                    "state": "RJ",
+                    "phone": "552122222222",
+                    "mobile_phone": "5521999999999",
+                    "status": "confirmed",
+                    "is_active": "1",
+                    "created_at": "2014-08-12 12:34:45",
+                    "updated_at": "2014-08-12 14:14:02",
+                    "deleted_at": ""
+                },
+                {
+                    "id": 3,
+                    "name": "Jogging",
+                    "surname": " in park",
+                    "display_name": "Jogging in park",
+                    "slug": "jogging-in-park",
+                    "email": "jogging@inpark.com",
+                    "token": ":OANDoasd89asdupbo;asd973rjk-9se-90afkn",
+                    "fid": "879565738",
+                    "district": "Centro",
+                    "city": "Rio de Janeiro",
+                    "state": "RJ",
+                    "phone": "552122222222",
+                    "mobile_phone": "5521999999999",
+                    "status": "confirmed",
+                    "is_active": "1",
+                    "created_at": "2014-08-12 12:34:45",
+                    "updated_at": "2014-08-12 14:14:02",
+                    "deleted_at": ""
+                },
+                {
+                    "id": 4,
+                    "name": "Jogging",
+                    "surname": " in park",
+                    "display_name": "Jogging in park",
+                    "slug": "jogging-in-park",
+                    "email": "jogging@inpark.com",
+                    "token": ":OANDoasd89asdupbo;asd973rjk-9se-90afkn",
+                    "fid": "879565738",
+                    "district": "Centro",
+                    "city": "Rio de Janeiro",
+                    "state": "RJ",
+                    "phone": "552122222222",
+                    "mobile_phone": "5521999999999",
+                    "status": "confirmed",
+                    "is_active": "1",
+                    "created_at": "2014-08-12 12:34:45",
+                    "updated_at": "2014-08-12 14:14:02",
+                    "deleted_at": ""
+                },
+                {
+                    "id": 5,
+                    "name": "Jogging",
+                    "surname": " in park",
+                    "display_name": "Jogging in park",
+                    "slug": "jogging-in-park",
+                    "email": "jogging@inpark.com",
+                    "token": ":OANDoasd89asdupbo;asd973rjk-9se-90afkn",
+                    "fid": "879565738",
+                    "district": "Centro",
+                    "city": "Rio de Janeiro",
+                    "state": "RJ",
+                    "phone": "552122222222",
+                    "mobile_phone": "5521999999999",
+                    "status": "confirmed",
+                    "is_active": "1",
+                    "created_at": "2014-08-12 12:34:45",
+                    "updated_at": "2014-08-12 14:14:02",
+                    "deleted_at": ""
+                }
+            ],
+            "request_time": 1408031100,
+            "validation": {}
+        }
 
-        [{
-          "id": 1, "title": "Jogging in park"
-        }, {
-          "id": 2, "title": "Pick-up posters from post-office"
-        }]
-
-### Create a Note [POST]
+### Create a User [POST]
 + Request (application/json)
 
-        { "title": "Buy cheese and bread for breakfast." }
+        {
+            "name": "Jogging", 
+            "surname": " in park", 
+            "display_name": "Jogging in park", 
+            "slug": "jogging-in-park", 
+            "email": "jogging@inpark.com", 
+            "token": ":OANDoasd89asdupbo;asd973rjk-9se-90afkn", 
+            "fid": "879565738", 
+            "district": "Centro",
+            "city": "Rio de Janeiro", 
+            "state": "RJ", 
+            "phone": "552122222222", 
+            "mobile_phone": "5521999999999", 
+            "status": "confirmed", 
+            "is_active": "1"
+        }
 
 + Response 201 (application/json)
 
-        { "id": 3, "title": "Buy cheese and bread for breakfast." }
+        {
+            "status": true,
+            "message": "Success creating User.",
+            "data": [
+                {
+                    "id": 5,
+                    "name": "Jogging",
+                    "surname": " in park",
+                    "display_name": "Jogging in park",
+                    "slug": "jogging-in-park",
+                    "email": "jogging@inpark.com",
+                    "token": ":OANDoasd89asdupbo;asd973rjk-9se-90afkn",
+                    "fid": "879565738",
+                    "district": "Centro",
+                    "city": "Rio de Janeiro",
+                    "state": "RJ",
+                    "phone": "552122222222",
+                    "mobile_phone": "5521999999999",
+                    "status": "confirmed",
+                    "is_active": "1",
+                    "created_at": "2014-08-12 12:34:45",
+                    "updated_at": "2014-08-12 14:14:02",
+                    "deleted_at": ""
+                }
+            ],
+            "request_time": 1408031100,
+            "validation": {}
+        }
 
-## Note [/notes/{id}]
-A single Note object with all its details
+## User [/v1/users/{id}]
+A single User object with all its details
 
 + Parameters
-    + id (required, number, `1`) ... Numeric `id` of the Note to perform action with. Has example value.
+    + id (required, number, `1`) ... Numeric `id` of the User to perform action with. Has example value.
 
-### Retrieve a Note [GET]
+### Retrieve a User [GET]
 + Response 200 (application/json)
 
     + Header
@@ -41,7 +186,2275 @@ A single Note object with all its details
 
     + Body
 
-            { "id": 2, "title": "Pick-up posters from post-office" }
+            {
+                "status": true,
+                "message": "Success getting User.",
+                "data": [
+                    {
+                        "id": 1,
+                        "name": "Jogging",
+                        "surname": " in park",
+                        "display_name": "Jogging in park",
+                        "slug": "jogging-in-park",
+                        "email": "jogging@inpark.com",
+                        "token": ":OANDoasd89asdupbo;asd973rjk-9se-90afkn",
+                        "fid": "879565738",
+                        "district": "Centro",
+                        "city": "Rio de Janeiro",
+                        "state": "RJ",
+                        "phone": "552122222222",
+                        "mobile_phone": "5521999999999",
+                        "status": "confirmed",
+                        "is_active": "1",
+                        "created_at": "2014-08-12 12:34:45",
+                        "updated_at": "2014-08-12 14:14:02",
+                        "deleted_at": ""
+                    }
+                ],
+                "request_time": 1408031100,
+                "validation": {}
+            }
 
-### Remove a Note [DELETE]
+### Remove a User [DELETE]
 + Response 204
+
+## User Addresses Collection [/v1/users/{id}/addresses]
+### List all User Addresses [GET]
++ Response 200 (application/json)
+    
+        {
+            "status": true,
+            "message": "Success listing User Addresses",
+            "data": [
+                {
+                    "id": 1,
+                    "name": "My Address",
+                    "user_id": 2,
+                    "map": "",
+                    "zipcode": "22222333",
+                    "address": "Your Street",
+                    "number": "45",
+                    "district": "Downtown",
+                    "city": "My City",
+                    "state": "My State",
+                    "complement": "",
+                    "type": "",
+                    "token": "aisuodhaisdjbAIDSJBauisd087",
+                    "is_active": "1",
+                    "created_at": "2014-08-12 12:34:45",
+                    "updated_at": "2014-08-12 14:14:02",
+                    "deleted_at": ""
+                },
+                {
+                    "id": 2,
+                    "name": "My Address 2",
+                    "user_id": 2,
+                    "map": "",
+                    "zipcode": "22222333",
+                    "address": "Your Street",
+                    "number": "45",
+                    "district": "Downtown",
+                    "city": "My City",
+                    "state": "My State",
+                    "complement": "",
+                    "type": "",
+                    "token": "aisuodhaisdjbAIDSJBauisd087",
+                    "is_active": "1",
+                    "created_at": "2014-08-12 12:34:45",
+                    "updated_at": "2014-08-12 14:14:02",
+                    "deleted_at": ""
+                },
+                {
+                    "id": 3,
+                    "name": "My Address 3",
+                    "user_id": 2,
+                    "map": "",
+                    "zipcode": "22222333",
+                    "address": "Your Street",
+                    "number": "45",
+                    "district": "Downtown",
+                    "city": "My City",
+                    "state": "My State",
+                    "complement": "",
+                    "type": "",
+                    "token": "aisuodhaisdjbAIDSJBauisd087",
+                    "is_active": "1",
+                    "created_at": "2014-08-12 12:34:45",
+                    "updated_at": "2014-08-12 14:14:02",
+                    "deleted_at": ""
+                },
+                {
+                    "id": 4,
+                    "name": "My Address 4",
+                    "user_id": 2,
+                    "map": "",
+                    "zipcode": "22222333",
+                    "address": "Your Street",
+                    "number": "45",
+                    "district": "Downtown",
+                    "city": "My City",
+                    "state": "My State",
+                    "complement": "",
+                    "type": "",
+                    "token": "aisuodhaisdjbAIDSJBauisd087",
+                    "is_active": "1",
+                    "created_at": "2014-08-12 12:34:45",
+                    "updated_at": "2014-08-12 14:14:02",
+                    "deleted_at": ""
+                },
+                {
+                    "id": 5,
+                    "name": "My Address 5",
+                    "user_id": 2,
+                    "map": "",
+                    "zipcode": "22222333",
+                    "address": "Your Street",
+                    "number": "45",
+                    "district": "Downtown",
+                    "city": "My City",
+                    "state": "My State",
+                    "complement": "",
+                    "type": "",
+                    "token": "aisuodhaisdjbAIDSJBauisd087",
+                    "is_active": "1",
+                    "created_at": "2014-08-12 12:34:45",
+                    "updated_at": "2014-08-12 14:14:02",
+                    "deleted_at": ""
+                }
+            ],
+            "request_time": 1408031100,
+            "validation": {}
+        }
+
+## User Comments Collection [/v1/users/{id}/comments]
+### List all User Comments [GET]
++ Response 200 (application/json)
+    
+        {
+            "status": true,
+            "message": "Success listing User Comments",
+            "data": [
+                {
+                    "id": 1,
+                    "user_id": 2,
+                    "restaurant_id": "20",
+                    "food_id": "234",
+                    "comment_id": "5764",
+                    "status": "posted",
+                    "privacity": "_public",
+                    "comment": "My comment are placed here",
+                    "type": "food",
+                    "is_active": "1",
+                    "created_at": "2014-08-12 12:34:45",
+                    "updated_at": "2014-08-12 14:14:02",
+                    "deleted_at": ""
+                },
+                {
+                    "id": 2,
+                    "user_id": 2,
+                    "restaurant_id": "20",
+                    "food_id": "234",
+                    "comment_id": "5764",
+                    "status": "posted",
+                    "privacity": "_public",
+                    "comment": "My comment are placed here",
+                    "type": "food",
+                    "is_active": "1",
+                    "created_at": "2014-08-12 12:34:45",
+                    "updated_at": "2014-08-12 14:14:02",
+                    "deleted_at": ""
+                },
+                {
+                    "id": 3,
+                    "user_id": 2,
+                    "restaurant_id": "20",
+                    "food_id": "234",
+                    "comment_id": "5764",
+                    "status": "posted",
+                    "privacity": "_public",
+                    "comment": "My comment are placed here",
+                    "type": "food",
+                    "is_active": "1",
+                    "created_at": "2014-08-12 12:34:45",
+                    "updated_at": "2014-08-12 14:14:02",
+                    "deleted_at": ""
+                },
+                {
+                    "id": 4,
+                    "user_id": 2,
+                    "restaurant_id": "20",
+                    "food_id": "234",
+                    "comment_id": "5764",
+                    "status": "posted",
+                    "privacity": "_public",
+                    "comment": "My comment are placed here",
+                    "type": "food",
+                    "is_active": "1",
+                    "created_at": "2014-08-12 12:34:45",
+                    "updated_at": "2014-08-12 14:14:02",
+                    "deleted_at": ""
+                },
+                {
+                    "id": 5,
+                    "user_id": 2,
+                    "restaurant_id": "20",
+                    "food_id": "234",
+                    "comment_id": "5764",
+                    "status": "posted",
+                    "privacity": "_public",
+                    "comment": "My comment are placed here",
+                    "type": "food",
+                    "is_active": "1",
+                    "created_at": "2014-08-12 12:34:45",
+                    "updated_at": "2014-08-12 14:14:02",
+                    "deleted_at": ""
+                }
+            ],
+            "request_time": 1408031100,
+            "validation": {}
+        }
+
+## User Delicious Collection [/v1/users/{id}/delicious]
+### List all User Delicious [GET]
++ Response 200 (application/json)
+    
+        {
+            "status": true,
+            "message": "Success listing User Delicious.",
+            "data": [
+                {
+                    "id": 1,
+                    "food_id": "234",
+                    "user_id": 2,
+                    "privacity": "_public",
+                    "created_at": "2014-08-12 12:34:45",
+                    "updated_at": "2014-08-12 14:14:02",
+                    "deleted_at": ""
+                },
+                {
+                    "id": 2,
+                    "food_id": "234",
+                    "user_id": 2,
+                    "privacity": "_public",
+                    "created_at": "2014-08-12 12:34:45",
+                    "updated_at": "2014-08-12 14:14:02",
+                    "deleted_at": ""
+                },
+                {
+                    "id": 3,
+                    "food_id": "234",
+                    "user_id": 2,
+                    "privacity": "_public",
+                    "created_at": "2014-08-12 12:34:45",
+                    "updated_at": "2014-08-12 14:14:02",
+                    "deleted_at": ""
+                },
+                {
+                    "id": 4,
+                    "food_id": "234",
+                    "user_id": 2,
+                    "privacity": "_public",
+                    "created_at": "2014-08-12 12:34:45",
+                    "updated_at": "2014-08-12 14:14:02",
+                    "deleted_at": ""
+                },
+                {
+                    "id": 5,
+                    "food_id": "234",
+                    "user_id": 2,
+                    "privacity": "_public",
+                    "created_at": "2014-08-12 12:34:45",
+                    "updated_at": "2014-08-12 14:14:02",
+                    "deleted_at": ""
+                }
+            ],
+            "request_time": 1408031100,
+            "validation": {}
+        }
+
+## User Orders Collection [/v1/users/{id}/orders]
+### List all User Orders [GET]
++ Response 200 (application/json)
+    
+        {
+            "status": true,
+            "message": "Success listing User Orders.",
+            "data": [
+                {
+                    "id": 1,
+                    "user_id": 2,
+                    "price": "50.9",
+                    "status": "approved",
+                    "payment_method": "credit card",
+                    "additional_instructions": "without pepper",
+                    "ip": "198.162.0.1",
+                    "time": "8765734268",
+                    "os": "Windows",
+                    "browser": "chrome",
+                    "sessionid": "lasnASDoibda7",
+                    "privacity": "_public",
+                    "paid": "51",
+                    "status_message": "approved",
+                    "restaurant_id": "23",
+                    "delivery_tax": "5",
+                    "created_at": "2014-08-12 12:34:45",
+                    "updated_at": "2014-08-12 14:14:02",
+                    "deleted_at": ""
+                },
+                {
+                    "id": 2,
+                    "user_id": 2,
+                    "price": "50.9",
+                    "status": "approved",
+                    "payment_method": "credit card",
+                    "additional_instructions": "without pepper",
+                    "ip": "198.162.0.1",
+                    "time": "8765734268",
+                    "os": "Windows",
+                    "browser": "chrome",
+                    "sessionid": "lasnASDoibda7",
+                    "privacity": "_public",
+                    "paid": "51",
+                    "status_message": "approved",
+                    "restaurant_id": "23",
+                    "delivery_tax": "5",
+                    "created_at": "2014-08-12 12:34:45",
+                    "updated_at": "2014-08-12 14:14:02",
+                    "deleted_at": ""
+                },
+                {
+                    "id": 3,
+                    "user_id": 2,
+                    "price": "50.9",
+                    "status": "approved",
+                    "payment_method": "credit card",
+                    "additional_instructions": "without pepper",
+                    "ip": "198.162.0.1",
+                    "time": "8765734268",
+                    "os": "Windows",
+                    "browser": "chrome",
+                    "sessionid": "lasnASDoibda7",
+                    "privacity": "_public",
+                    "paid": "51",
+                    "status_message": "approved",
+                    "restaurant_id": "23",
+                    "delivery_tax": "5",
+                    "created_at": "2014-08-12 12:34:45",
+                    "updated_at": "2014-08-12 14:14:02",
+                    "deleted_at": ""
+                },
+                {
+                    "id": 4,
+                    "user_id": 2,
+                    "price": "50.9",
+                    "status": "approved",
+                    "payment_method": "credit card",
+                    "additional_instructions": "without pepper",
+                    "ip": "198.162.0.1",
+                    "time": "8765734268",
+                    "os": "Windows",
+                    "browser": "chrome",
+                    "sessionid": "lasnASDoibda7",
+                    "privacity": "_public",
+                    "paid": "51",
+                    "status_message": "approved",
+                    "restaurant_id": "23",
+                    "delivery_tax": "5",
+                    "created_at": "2014-08-12 12:34:45",
+                    "updated_at": "2014-08-12 14:14:02",
+                    "deleted_at": ""
+                },
+                {
+                    "id": 5,
+                    "user_id": 2,
+                    "price": "50.9",
+                    "status": "approved",
+                    "payment_method": "credit card",
+                    "additional_instructions": "without pepper",
+                    "ip": "198.162.0.1",
+                    "time": "8765734268",
+                    "os": "Windows",
+                    "browser": "chrome",
+                    "sessionid": "lasnASDoibda7",
+                    "privacity": "_public",
+                    "paid": "51",
+                    "status_message": "approved",
+                    "restaurant_id": "23",
+                    "delivery_tax": "5",
+                    "created_at": "2014-08-12 12:34:45",
+                    "updated_at": "2014-08-12 14:14:02",
+                    "deleted_at": ""
+                }
+            ],
+            "request_time": 1408031100,
+            "validation": {}
+        }
+
+Group Restaurants
+=================
+
+Restaurants related resources of the **Melhor Menu API**
+
+Restaurants Collection [/v1/restaurants]
+----------------------------------
+    
+### List all Restaurants [GET]
+
+- Response 200 (application/json)
+
+```
+{
+    "status": true,
+    "message": "Success listing Restaurants.",
+    "data": [
+        {
+            "id": 1,
+            "name": "Foo Bar",
+            "real_name": "Foo Bar",
+            "description": "A Short Description of Foo",
+            "slug": "foo-bar",
+            "cnpj": "00.000.000/0000-00",
+            "address": "Full Address to Test",
+            "district": "Restaurant District",
+            "city": "Restaurant City",
+            "state": "Restaurant State",
+            "district_slug": "restaurant-district",
+            "district_city": "restaurant-city",
+            "district_state": "restaurant-state",
+            "complement": "address complement",
+            "phone": "9999999999",
+            "food_type": "Restaurant Food types, divided by comma",
+            "open_time": "10:00",
+            "close_time": "22:00",
+            "delivery_tax": "15.00",
+            "coordinates": "-22.999515,-43.3069904",
+            "map": "http://mapurl.com",
+            "user_id": "1",
+            "email": "email@foo.bar",
+            "contact_name": "John Doe",
+            "contact_phone": "99999999999",
+            "contact_email": "owner@foo.bar",
+            "contact_cpf": "000.000.000-00",
+            "status": "pending",
+            "is_active": "1",
+            "min_order": "30.00",
+            "online_payment": "1",
+            "payment_types": "{credit card, debit card, money}",
+            "keywords": "foo bar pizza italian",
+            "delivery_time": "45m",
+            "is_address_public": "1",
+            "comments_counter": "120",
+            "buyers_counter": "50",
+            "is_online": "1",
+            "last_online": "98655731",
+            "last_online_ip": "127.0.0.1",
+            "rate": "3.5",
+            "created_at": "2014-08-12 12:34:45",
+            "updated_at": "2014-08-12 14:14:02",
+            "deleted_at": ""
+        },
+        {
+            "id": 2,
+            "name": "Foo Bar",
+            "real_name": "Foo Bar",
+            "description": "A Short Description of Foo",
+            "slug": "foo-bar",
+            "cnpj": "00.000.000/0000-00",
+            "address": "Full Address to Test",
+            "district": "Restaurant District",
+            "city": "Restaurant City",
+            "state": "Restaurant State",
+            "district_slug": "restaurant-district",
+            "district_city": "restaurant-city",
+            "district_state": "restaurant-state",
+            "complement": "address complement",
+            "phone": "9999999999",
+            "food_type": "Restaurant Food types, divided by comma",
+            "open_time": "10:00",
+            "close_time": "22:00",
+            "delivery_tax": "15.00",
+            "coordinates": "-22.999515,-43.3069904",
+            "map": "http://mapurl.com",
+            "user_id": "1",
+            "email": "email@foo.bar",
+            "contact_name": "John Doe",
+            "contact_phone": "99999999999",
+            "contact_email": "owner@foo.bar",
+            "contact_cpf": "000.000.000-00",
+            "status": "pending",
+            "is_active": "1",
+            "min_order": "30.00",
+            "online_payment": "1",
+            "payment_types": "{credit card, debit card, money}",
+            "keywords": "foo bar pizza italian",
+            "delivery_time": "45m",
+            "is_address_public": "1",
+            "comments_counter": "120",
+            "buyers_counter": "50",
+            "is_online": "1",
+            "last_online": "98655731",
+            "last_online_ip": "127.0.0.1",
+            "rate": "3.5",
+            "created_at": "2014-08-12 12:34:45",
+            "updated_at": "2014-08-12 14:14:02",
+            "deleted_at": ""
+        },
+        {
+            "id": 3,
+            "name": "Foo Bar",
+            "real_name": "Foo Bar",
+            "description": "A Short Description of Foo",
+            "slug": "foo-bar",
+            "cnpj": "00.000.000/0000-00",
+            "address": "Full Address to Test",
+            "district": "Restaurant District",
+            "city": "Restaurant City",
+            "state": "Restaurant State",
+            "district_slug": "restaurant-district",
+            "district_city": "restaurant-city",
+            "district_state": "restaurant-state",
+            "complement": "address complement",
+            "phone": "9999999999",
+            "food_type": "Restaurant Food types, divided by comma",
+            "open_time": "10:00",
+            "close_time": "22:00",
+            "delivery_tax": "15.00",
+            "coordinates": "-22.999515,-43.3069904",
+            "map": "http://mapurl.com",
+            "user_id": "1",
+            "email": "email@foo.bar",
+            "contact_name": "John Doe",
+            "contact_phone": "99999999999",
+            "contact_email": "owner@foo.bar",
+            "contact_cpf": "000.000.000-00",
+            "status": "pending",
+            "is_active": "1",
+            "min_order": "30.00",
+            "online_payment": "1",
+            "payment_types": "{credit card, debit card, money}",
+            "keywords": "foo bar pizza italian",
+            "delivery_time": "45m",
+            "is_address_public": "1",
+            "comments_counter": "120",
+            "buyers_counter": "50",
+            "is_online": "1",
+            "last_online": "98655731",
+            "last_online_ip": "127.0.0.1",
+            "rate": "3.5",
+            "created_at": "2014-08-12 12:34:45",
+            "updated_at": "2014-08-12 14:14:02",
+            "deleted_at": ""
+        },
+        {
+            "id": 4,
+            "name": "Foo Bar",
+            "real_name": "Foo Bar",
+            "description": "A Short Description of Foo",
+            "slug": "foo-bar",
+            "cnpj": "00.000.000/0000-00",
+            "address": "Full Address to Test",
+            "district": "Restaurant District",
+            "city": "Restaurant City",
+            "state": "Restaurant State",
+            "district_slug": "restaurant-district",
+            "district_city": "restaurant-city",
+            "district_state": "restaurant-state",
+            "complement": "address complement",
+            "phone": "9999999999",
+            "food_type": "Restaurant Food types, divided by comma",
+            "open_time": "10:00",
+            "close_time": "22:00",
+            "delivery_tax": "15.00",
+            "coordinates": "-22.999515,-43.3069904",
+            "map": "http://mapurl.com",
+            "user_id": "1",
+            "email": "email@foo.bar",
+            "contact_name": "John Doe",
+            "contact_phone": "99999999999",
+            "contact_email": "owner@foo.bar",
+            "contact_cpf": "000.000.000-00",
+            "status": "pending",
+            "is_active": "1",
+            "min_order": "30.00",
+            "online_payment": "1",
+            "payment_types": "{credit card, debit card, money}",
+            "keywords": "foo bar pizza italian",
+            "delivery_time": "45m",
+            "is_address_public": "1",
+            "comments_counter": "120",
+            "buyers_counter": "50",
+            "is_online": "1",
+            "last_online": "98655731",
+            "last_online_ip": "127.0.0.1",
+            "rate": "3.5",
+            "created_at": "2014-08-12 12:34:45",
+            "updated_at": "2014-08-12 14:14:02",
+            "deleted_at": ""
+        },
+        {
+            "id": 5,
+            "name": "Foo Bar",
+            "real_name": "Foo Bar",
+            "description": "A Short Description of Foo",
+            "slug": "foo-bar",
+            "cnpj": "00.000.000/0000-00",
+            "address": "Full Address to Test",
+            "district": "Restaurant District",
+            "city": "Restaurant City",
+            "state": "Restaurant State",
+            "district_slug": "restaurant-district",
+            "district_city": "restaurant-city",
+            "district_state": "restaurant-state",
+            "complement": "address complement",
+            "phone": "9999999999",
+            "food_type": "Restaurant Food types, divided by comma",
+            "open_time": "10:00",
+            "close_time": "22:00",
+            "delivery_tax": "15.00",
+            "coordinates": "-22.999515,-43.3069904",
+            "map": "http://mapurl.com",
+            "user_id": "1",
+            "email": "email@foo.bar",
+            "contact_name": "John Doe",
+            "contact_phone": "99999999999",
+            "contact_email": "owner@foo.bar",
+            "contact_cpf": "000.000.000-00",
+            "status": "pending",
+            "is_active": "1",
+            "min_order": "30.00",
+            "online_payment": "1",
+            "payment_types": "{credit card, debit card, money}",
+            "keywords": "foo bar pizza italian",
+            "delivery_time": "45m",
+            "is_address_public": "1",
+            "comments_counter": "120",
+            "buyers_counter": "50",
+            "is_online": "1",
+            "last_online": "98655731",
+            "last_online_ip": "127.0.0.1",
+            "rate": "3.5",
+            "created_at": "2014-08-12 12:34:45",
+            "updated_at": "2014-08-12 14:14:02",
+            "deleted_at": ""
+        }
+
+    ],
+    "request_time": 1408031100,
+    "validation": {}
+}
+```
+
+### Create a Restaurant [POST]
+
+#### Properties
+- __name__ (required, string, `Foo Bar`) ... A string with the restaurant name
+- __real_name__ (optional, string, `Foo Bar Corp`) ... A string with the real name of restaurant
+- __description__ (optional, string, `This is a nice restaurant`) ... A string with the short description of restaurant
+- __cnpj__ (required, string, `00.000.000/0000-00`) ... A string with the cnpj of restaurant
+- __address__ (optional, string, `Restaurant address`) ... A string with the address of restaurant
+- __district__ (required, string, `Restaurant District`) ... A string with the district where restaurant is placed
+- __city__ (required, string, `Restaurant City`) ... A string with the city where restaurant is placed
+- __state__ (required, string, `Restaurant State`) ... A string with the state where restaurant is placed
+- __complement__ (optional, string, `Second Floor`) ... A string with the address complement
+- __phone__ (optional, int, `9999999999`) ... A field with the restaurant phone
+- __food_type__ (required, string, `Pizzas, Fast Food`) ... A string with the food types of restaurant
+- __open_time__ (optional, time, `10:00`) ... A time field with the open time of restaurant
+- __close_time__ (optional, time, `22:00`) ... A time field with the close time of restaurant
+- __delivery_tax__ (required, float, `15.00`) ... A field with the delivery tax of restaurant
+- __coodinates__ (optional, string, `-22.999515,-43.3069904`) ... A field with the Geo coordinates of restaurant
+- __map__ (optional, string, `http://mapurl.com`) ... A field with the map url of restaurant
+- __user_id__ (required, int, `1`) ... A field with the id of user that create the new restaurant
+- __email__ (optional, string, `email@foo.bar`) ... A field with the email of restaurant
+- __contact_name__ (required, string, `John Doe`) ... A field with the of contact name from restaurant
+- __contact_phone__ (required, int, `99999999999`) ... A field with the contact phone from restaurant
+- __contact_email__ (required, string, `owner@foo.bar`) ... A field with the email of contact person from restaurant
+- __contact_cpf__ (required, string, `000.000.000-00`) ... A field with the cpf from owner of restaurant
+- __status__ (optional, string, `pending`) ... A field with the status of restaurant
+- __is_active__ (optional, string, `1`) ... A field that indicate if restaurant is active or not
+- __min_order__ (required, string, `30.00`) ... A field with minimal value for an order in this restaurant
+- __online_payment__ (optional, string, `1`) ... A field that indicate if the restaurant accepts online payment or not
+- __payment_types__ (optional, string, `[credit card, debit card, money]`) ... A field with the payment types of restaurant
+- __keywords__ (optional, string, `pizzas, pasta, fast`) ... A field with the keywords of restaurant
+- __delivery_time__ (required, string, `45m`) ... A field with the time that order will be delivered
+- __is_address_public__ (optional, string, `1`) ... A field with the public status of restaurant address
+- __rate__ (optional, string, `3.5`) ... A field with the rating of restaurant
+
+- Request (application/json)
+
+```
+{
+    "name": "Foo Bar",
+    "real_name": "Foo Bar",
+    "description": "A Short Description of Foo",
+    "cnpj": "00.000.000/0000-00",
+    "address": "Full Address to Test",
+    "district": "Restaurant District",
+    "city": "Restaurant City",
+    "state": "Restaurant State",
+    "complement": "address complement",
+    "phone": "9999999999",
+    "food_type": "Restaurant Food types, divided by comma",
+    "open_time": "10:00",
+    "close_time": "22:00",
+    "delivery_tax": "15.00",
+    "coordinates": "-22.999515,-43.3069904",
+    "map": "http://mapurl.com",
+    "user_id": "1",
+    "email": "email@foo.bar",
+    "contact_name": "John Doe",
+    "contact_phone": "99999999999",
+    "contact_email": "owner@foo.bar",
+    "contact_cpf": "000.000.000-00",
+    "status": "pending",
+    "is_active": "1",
+    "min_order": "30.00",
+    "online_payment": "1",
+    "payment_types": "{credit card, debit card, money}",
+    "keywords": "foo bar pizza italian",
+    "delivery_time": "45m",
+    "is_address_public": "1",
+    "rate": "3.5",
+}
+```
+
+- Response 201 (application/json)
+
+```
+{
+    "status": true,
+    "message": "Success creating Restaurant.",
+    "data": [
+        {
+            "id": 5,
+            "name": "Foo Bar",
+            "real_name": "Foo Bar",
+            "description": "A Short Description of Foo",
+            "slug": "foo-bar",
+            "cnpj": "00.000.000/0000-00",
+            "address": "Full Address to Test",
+            "district": "Restaurant District",
+            "city": "Restaurant City",
+            "state": "Restaurant State",
+            "district_slug": "restaurant-district",
+            "city_slug": "restaurant-city",
+            "state_slug": "restaurant-state",
+            "complement": "address complement",
+            "phone": "9999999999",
+            "food_type": "Restaurant Food types, divided by comma",
+            "open_time": "10:00",
+            "close_time": "22:00",
+            "delivery_tax": "15.00",
+            "coordinates": "-22.999515,-43.3069904",
+            "map": "http://mapurl.com",
+            "user_id": "1",
+            "email": "email@foo.bar",
+            "contact_name": "John Doe",
+            "contact_phone": "99999999999",
+            "contact_email": "owner@foo.bar",
+            "contact_cpf": "000.000.000-00",
+            "status": "pending",
+            "is_active": "1",
+            "min_order": "30.00",
+            "online_payment": "1",
+            "payment_types": "{credit card, debit card, money}",
+            "keywords": "foo bar pizza italian",
+            "delivery_time": "45m",
+            "is_address_public": "1",
+            "comments_counter": "0",
+            "buyers_counter": "0",
+            "is_online": "0",
+            "last_online": "",
+            "last_online_ip": "",
+            "rate": "3.5",
+            "created_at": "2014-08-12 12:34:45",
+            "updated_at": "2014-08-12 14:14:02",
+            "deleted_at": ""
+        }
+    ],
+    "request_time": 1408031100,
+    "validation": {}
+}
+```
+
+Restaurant [/v1/restaurants/{id}]
+---------------------------
+
+A single Restaurant object with all its details
+
++ Parameters
+    + id (required, number, `1`) ... Numeric `id` of the restaurant to perform action with. Has example value.
+
+### Retrieve a Restaurant [GET]
+
+- Response 200 (application/json)
+
+```
+{
+    "status": true,
+    "message": "Success getting Restaurant.",
+    "data": [
+        {
+            "id": 1,
+            "name": "Foo Bar",
+            "real_name": "Foo Bar",
+            "description": "A Short Description of Foo",
+            "slug": "foo-bar",
+            "cnpj": "00.000.000/0000-00",
+            "address": "Full Address to Test",
+            "district": "Restaurant District",
+            "city": "Restaurant City",
+            "state": "Restaurant State",
+            "district_slug": "restaurant-district",
+            "district_city": "restaurant-city",
+            "district_state": "restaurant-state",
+            "complement": "address complement",
+            "phone": "9999999999",
+            "food_type": "Restaurant Food types, divided by comma",
+            "open_time": "10:00",
+            "close_time": "22:00",
+            "delivery_tax": "15.00",
+            "coordinates": "-22.999515,-43.3069904",
+            "map": "http://mapurl.com",
+            "user_id": "1",
+            "email": "email@foo.bar",
+            "contact_name": "John Doe",
+            "contact_phone": "99999999999",
+            "contact_email": "owner@foo.bar",
+            "contact_cpf": "000.000.000-00",
+            "status": "pending",
+            "is_active": "1",
+            "min_order": "30.00",
+            "online_payment": "1",
+            "payment_types": "{credit card, debit card, money}",
+            "keywords": "foo bar pizza italian",
+            "delivery_time": "45m",
+            "is_address_public": "1",
+            "comments_counter": "0",
+            "buyers_counter": "0",
+            "is_online": "0",
+            "last_online": "",
+            "last_online_ip": "",
+            "rate": "3.5",
+            "created_at": "2014-08-12 12:34:45",
+            "updated_at": "2014-08-12 14:14:02",
+            "deleted_at": ""
+        }
+    ],
+    "request_time": 1408031100,
+    "validation": {}
+}
+```
+
+### Update a Restaurant [PUT]
+
+- Response 200
+
+### Remove a Restaurant [DELETE]
+
+- Response 204
+
+Restaurant Foods Collection [/v1/restaurants/{id}/foods]
+--------------------------------------------------------
+
+### List all Restaurant Foods [GET]
+
+- Response 200 (application/json)
+
+```
+{
+    "status": true,
+    "message": "Success listing Restaurant Foods.",
+    "data": [
+        {
+            "id": 1,
+            "name": "My Food",
+            "category_id": 2,
+            "subcategory_id": 12,
+            "description": "A short description for a Food",
+            "ingredients": "Bacon, Eggs, Tomatoes",
+            "nutritional_table": "Info about your food",
+            "price": "29.90",
+            "in_stock": 1,
+            "restaurant_id": 1,
+            "user_id": 2,
+            "slug": "my-food-0987657",
+            "pack": 1,
+            "pack_price": "1.00",
+            "pack_units": 1,
+            "time": 9876579,
+            "status": 1,
+            "delicious_counter": 23,
+            "comments_counter": 8,
+            "buyers_counter": 12,
+            "has_photo": 1,
+            "rate": "4.5",
+            "created_at": "2014-08-12 12:34:45",
+            "updated_at": "2014-08-12 14:14:02",
+            "deleted_at": ""
+        },
+        {
+            "id": 2,
+            "name": "My Food",
+            "category_id": 2,
+            "subcategory_id": 12,
+            "description": "A short description for a Food",
+            "ingredients": "Bacon, Eggs, Tomatoes",
+            "nutritional_table": "Info about your food",
+            "price": "29.90",
+            "in_stock": 1,
+            "restaurant_id": 1,
+            "user_id": 2,
+            "slug": "my-food-0987657",
+            "pack": 1,
+            "pack_price": "1.00",
+            "pack_units": 1,
+            "time": 9876579,
+            "status": 1,
+            "delicious_counter": 23,
+            "comments_counter": 8,
+            "buyers_counter": 12,
+            "has_photo": 1,
+            "rate": "4.5",
+            "created_at": "2014-08-12 12:34:45",
+            "updated_at": "2014-08-12 14:14:02",
+            "deleted_at": ""
+        },
+        {
+            "id": 3,
+            "name": "My Food",
+            "category_id": 2,
+            "subcategory_id": 12,
+            "description": "A short description for a Food",
+            "ingredients": "Bacon, Eggs, Tomatoes",
+            "nutritional_table": "Info about your food",
+            "price": "29.90",
+            "in_stock": 1,
+            "restaurant_id": 1,
+            "user_id": 2,
+            "slug": "my-food-0987657",
+            "pack": 1,
+            "pack_price": "1.00",
+            "pack_units": 1,
+            "time": 9876579,
+            "status": 1,
+            "delicious_counter": 23,
+            "comments_counter": 8,
+            "buyers_counter": 12,
+            "has_photo": 1,
+            "rate": "4.5",
+            "created_at": "2014-08-12 12:34:45",
+            "updated_at": "2014-08-12 14:14:02",
+            "deleted_at": ""
+        },
+        {
+            "id": 4,
+            "name": "My Food",
+            "category_id": 2,
+            "subcategory_id": 12,
+            "description": "A short description for a Food",
+            "ingredients": "Bacon, Eggs, Tomatoes",
+            "nutritional_table": "Info about your food",
+            "price": "29.90",
+            "in_stock": 1,
+            "restaurant_id": 1,
+            "user_id": 2,
+            "slug": "my-food-0987657",
+            "pack": 1,
+            "pack_price": "1.00",
+            "pack_units": 1,
+            "time": 9876579,
+            "status": 1,
+            "delicious_counter": 23,
+            "comments_counter": 8,
+            "buyers_counter": 12,
+            "has_photo": 1,
+            "rate": "4.5",
+            "created_at": "2014-08-12 12:34:45",
+            "updated_at": "2014-08-12 14:14:02",
+            "deleted_at": ""
+        },
+        {
+            "id": 5,
+            "name": "My Food",
+            "category_id": 2,
+            "subcategory_id": 12,
+            "description": "A short description for a Food",
+            "ingredients": "Bacon, Eggs, Tomatoes",
+            "nutritional_table": "Info about your food",
+            "price": "29.90",
+            "in_stock": 1,
+            "restaurant_id": 1,
+            "user_id": 2,
+            "slug": "my-food-0987657",
+            "pack": 1,
+            "pack_price": "1.00",
+            "pack_units": 1,
+            "time": 9876579,
+            "status": 1,
+            "delicious_counter": 23,
+            "comments_counter": 8,
+            "buyers_counter": 12,
+            "has_photo": 1,
+            "rate": "4.5",
+            "created_at": "2014-08-12 12:34:45",
+            "updated_at": "2014-08-12 14:14:02",
+            "deleted_at": ""
+        }
+    ],
+    "request_time": 1408031100,
+    "validation": {}
+}
+```
+
+Restaurant Orders Collection [/v1/restaurants/{id}/orders]
+----------------------------------------------------------
+
+### List all Restaurant Orders [GET]
+
+- Response 200 (application/json)
+
+```
+{
+    "status": true,
+    "message": "Success listing Restaurant Orders.",
+    "data": [
+        {
+            "id": 1,
+            "user_id": "1",
+            "price": "30.90",
+            "status": "approved",
+            "payment_method": "credit_card",
+            "address_id": "16",
+            "additional_instructions": "none",
+            "ip": "127.0.0.1",
+            "time": "123456789",
+            "os": "Win",
+            "browser": "Chrome",
+            "sessionid": "987a6sd897hjasd897asjkh",
+            "privacity": "_public",
+            "paid": "40.00",
+            "status_message": "",
+            "restaurant_id": "20",
+            "delivery_tax": "15",
+            "created_at": "2014-08-12 12:34:45",
+            "updated_at": "2014-08-12 14:14:02",
+            "deleted_at": ""
+        },
+        {
+            "id": 2,
+            "user_id": "1",
+            "price": "30.90",
+            "status": "approved",
+            "payment_method": "credit_card",
+            "address_id": "16",
+            "additional_instructions": "none",
+            "ip": "127.0.0.1",
+            "time": "123456789",
+            "os": "Win",
+            "browser": "Chrome",
+            "sessionid": "987a6sd897hjasd897asjkh",
+            "privacity": "_public",
+            "paid": "40.00",
+            "status_message": "",
+            "restaurant_id": "20",
+            "delivery_tax": "15",
+            "created_at": "2014-08-12 12:34:45",
+            "updated_at": "2014-08-12 14:14:02",
+            "deleted_at": ""
+        },
+        {
+            "id": 3,
+            "user_id": "1",
+            "price": "30.90",
+            "status": "approved",
+            "payment_method": "credit_card",
+            "address_id": "16",
+            "additional_instructions": "none",
+            "ip": "127.0.0.1",
+            "time": "123456789",
+            "os": "Win",
+            "browser": "Chrome",
+            "sessionid": "987a6sd897hjasd897asjkh",
+            "privacity": "_public",
+            "paid": "40.00",
+            "status_message": "",
+            "restaurant_id": "20",
+            "delivery_tax": "15",
+            "created_at": "2014-08-12 12:34:45",
+            "updated_at": "2014-08-12 14:14:02",
+            "deleted_at": ""
+        },
+        {
+            "id": 4,
+            "user_id": "1",
+            "price": "30.90",
+            "status": "approved",
+            "payment_method": "credit_card",
+            "address_id": "16",
+            "additional_instructions": "none",
+            "ip": "127.0.0.1",
+            "time": "123456789",
+            "os": "Win",
+            "browser": "Chrome",
+            "sessionid": "987a6sd897hjasd897asjkh",
+            "privacity": "_public",
+            "paid": "40.00",
+            "status_message": "",
+            "restaurant_id": "20",
+            "delivery_tax": "15",
+            "created_at": "2014-08-12 12:34:45",
+            "updated_at": "2014-08-12 14:14:02",
+            "deleted_at": ""
+        },
+        {
+            "id": 5,
+            "user_id": "1",
+            "price": "30.90",
+            "status": "approved",
+            "payment_method": "credit_card",
+            "address_id": "16",
+            "additional_instructions": "none",
+            "ip": "127.0.0.1",
+            "time": "123456789",
+            "os": "Win",
+            "browser": "Chrome",
+            "sessionid": "987a6sd897hjasd897asjkh",
+            "privacity": "_public",
+            "paid": "40.00",
+            "status_message": "",
+            "restaurant_id": "20",
+            "delivery_tax": "15",
+            "created_at": "2014-08-12 12:34:45",
+            "updated_at": "2014-08-12 14:14:02",
+            "deleted_at": ""
+        }
+    ],
+    "request_time": 1408031100,
+    "validation": {}
+}
+```
+
+Restaurant Comments Collection [/v1/restaurants/{id}/comments]
+--------------------------------------------------------------
+
+### List all Restaurant Comments [GET]
+
+- Response 200 (application/json)
+
+```
+{
+    "status": true,
+    "message": "Success listing Restaurant Comments.",
+    "data": [
+        {
+            "id": 1,
+            "user_id": "1",
+            "restaurant_id": "20",
+            "food_id": "123",
+            "comment_id": "",
+            "status": "posted",
+            "privacity": "_public",
+            "comment": "This is a nice restaurant",
+            "type": "restaurant",
+            "is_active": "1",
+            "created_at": "2014-08-12 12:34:45",
+            "updated_at": "2014-08-12 14:14:02",
+            "deleted_at": ""
+        },
+        {
+            "id": 2,
+            "user_id": "1",
+            "restaurant_id": "20",
+            "food_id": "123",
+            "comment_id": "",
+            "status": "posted",
+            "privacity": "_public",
+            "comment": "This is a nice restaurant",
+            "type": "restaurant",
+            "is_active": "1",
+            "created_at": "2014-08-12 12:34:45",
+            "updated_at": "2014-08-12 14:14:02",
+            "deleted_at": ""
+        },
+        {
+            "id": 3,
+            "user_id": "1",
+            "restaurant_id": "20",
+            "food_id": "123",
+            "comment_id": "",
+            "status": "posted",
+            "privacity": "_public",
+            "comment": "This is a nice restaurant",
+            "type": "restaurant",
+            "is_active": "1",
+            "created_at": "2014-08-12 12:34:45",
+            "updated_at": "2014-08-12 14:14:02",
+            "deleted_at": ""
+        },
+        {
+            "id": 4,
+            "user_id": "1",
+            "restaurant_id": "20",
+            "food_id": "123",
+            "comment_id": "",
+            "status": "posted",
+            "privacity": "_public",
+            "comment": "This is a nice restaurant",
+            "type": "restaurant",
+            "is_active": "1",
+            "created_at": "2014-08-12 12:34:45",
+            "updated_at": "2014-08-12 14:14:02",
+            "deleted_at": ""
+        },
+        {
+            "id": 5,
+            "user_id": "1",
+            "restaurant_id": "20",
+            "food_id": "123",
+            "comment_id": "",
+            "status": "posted",
+            "privacity": "_public",
+            "comment": "This is a nice restaurant",
+            "type": "restaurant",
+            "is_active": "1",
+            "created_at": "2014-08-12 12:34:45",
+            "updated_at": "2014-08-12 14:14:02",
+            "deleted_at": ""
+        }
+    ],
+    "request_time": 1408031100,
+    "validation": {}
+}
+```
+
+Restaurant Rattings Collection [/v1/restaurants/{id}/rattings]
+--------------------------------------------------------------
+
+### List all Restaurant Rattings [GET]
+
+- Response 200 (application/json)
+
+```
+{
+    "status": true,
+    "message": "Success listing Restaurant Rattings.",
+    "data": [
+        {
+            "id": 1,
+            "user_id": "1",
+            "restaurant_id": "20",
+            "order_id": "",
+            "food_id": "",
+            "stars": "4",
+            "message": "This is a nice restaurant",
+            "status": "posted",
+            "privacity": "_public",
+            "is_active": "1",
+            "created_at": "2014-08-12 12:34:45",
+            "updated_at": "2014-08-12 14:14:02",
+            "deleted_at": ""
+        },
+        {
+            "id": 2,
+            "user_id": "1",
+            "restaurant_id": "20",
+            "order_id": "",
+            "food_id": "",
+            "stars": "4",
+            "message": "This is a nice restaurant",
+            "status": "posted",
+            "privacity": "_public",
+            "is_active": "1",
+            "created_at": "2014-08-12 12:34:45",
+            "updated_at": "2014-08-12 14:14:02",
+            "deleted_at": ""
+        },
+        {
+            "id": 3,
+            "user_id": "1",
+            "restaurant_id": "20",
+            "order_id": "",
+            "food_id": "",
+            "stars": "4",
+            "message": "This is a nice restaurant",
+            "status": "posted",
+            "privacity": "_public",
+            "is_active": "1",
+            "created_at": "2014-08-12 12:34:45",
+            "updated_at": "2014-08-12 14:14:02",
+            "deleted_at": ""
+        },
+        {
+            "id": 4,
+            "user_id": "1",
+            "restaurant_id": "20",
+            "order_id": "",
+            "food_id": "",
+            "stars": "4",
+            "message": "This is a nice restaurant",
+            "status": "posted",
+            "privacity": "_public",
+            "is_active": "1",
+            "created_at": "2014-08-12 12:34:45",
+            "updated_at": "2014-08-12 14:14:02",
+            "deleted_at": ""
+        },
+        {
+            "id": 5,
+            "user_id": "1",
+            "restaurant_id": "20",
+            "order_id": "",
+            "food_id": "",
+            "stars": "4",
+            "message": "This is a nice restaurant",
+            "status": "posted",
+            "privacity": "_public",
+            "is_active": "1",
+            "created_at": "2014-08-12 12:34:45",
+            "updated_at": "2014-08-12 14:14:02",
+            "deleted_at": ""
+        }
+    ],
+    "request_time": 1408031100,
+    "validation": {}
+}
+```
+
+Restaurant Delivery Locations Collection [/v1/restaurants/{id}/delivery-locations]
+----------------------------------------------------------------------------------
+
+### List all Restaurant Delivery Locations [GET]
+
+- Response 200 (application/json)
+
+```
+{
+    "status": true,
+    "message": "Success listing Restaurant Delivery Locations.",
+    "data": [
+        {
+            "id": 1,
+            "restaurant_id": "20",
+            "zipcode": "12345678",
+            "address": "The Test Street",
+            "district": "My District",
+            "city": "My City",
+            "state": "My State",
+            "district_id": "5698",
+            "city_id": "234",
+            "state_id": "6",
+            "open_delivery": "14:00",
+            "close_delivery": "18:00",
+            "min_order": "40.00",
+            "delivery_tax": "40.00",
+            "coordinates": "",
+            "initial_number": "0",
+            "final_number": "10000",
+            "not_delivery": "0",
+            "is_active": "1",
+            "created_at": "2014-08-12 12:34:45",
+            "updated_at": "2014-08-12 14:14:02",
+            "deleted_at": ""
+        },
+        {
+            "id": 2,
+            "restaurant_id": "20",
+            "zipcode": "12345678",
+            "address": "The Test Street",
+            "district": "My District",
+            "city": "My City",
+            "state": "My State",
+            "district_id": "5698",
+            "city_id": "234",
+            "state_id": "6",
+            "open_delivery": "14:00",
+            "close_delivery": "18:00",
+            "min_order": "40.00",
+            "delivery_tax": "40.00",
+            "coordinates": "",
+            "initial_number": "0",
+            "final_number": "10000",
+            "not_delivery": "0",
+            "is_active": "1",
+            "created_at": "2014-08-12 12:34:45",
+            "updated_at": "2014-08-12 14:14:02",
+            "deleted_at": ""
+        },
+        {
+            "id": 3,
+            "restaurant_id": "20",
+            "zipcode": "12345678",
+            "address": "The Test Street",
+            "district": "My District",
+            "city": "My City",
+            "state": "My State",
+            "district_id": "5698",
+            "city_id": "234",
+            "state_id": "6",
+            "open_delivery": "14:00",
+            "close_delivery": "18:00",
+            "min_order": "40.00",
+            "delivery_tax": "40.00",
+            "coordinates": "",
+            "initial_number": "0",
+            "final_number": "10000",
+            "not_delivery": "0",
+            "is_active": "1",
+            "created_at": "2014-08-12 12:34:45",
+            "updated_at": "2014-08-12 14:14:02",
+            "deleted_at": ""
+        },
+        {
+            "id": 4,
+            "restaurant_id": "20",
+            "zipcode": "12345678",
+            "address": "The Test Street",
+            "district": "My District",
+            "city": "My City",
+            "state": "My State",
+            "district_id": "5698",
+            "city_id": "234",
+            "state_id": "6",
+            "open_delivery": "14:00",
+            "close_delivery": "18:00",
+            "min_order": "40.00",
+            "delivery_tax": "40.00",
+            "coordinates": "",
+            "initial_number": "0",
+            "final_number": "10000",
+            "not_delivery": "0",
+            "is_active": "1",
+            "created_at": "2014-08-12 12:34:45",
+            "updated_at": "2014-08-12 14:14:02",
+            "deleted_at": ""
+        },
+        {
+            "id": 5,
+            "restaurant_id": "20",
+            "zipcode": "12345678",
+            "address": "The Test Street",
+            "district": "My District",
+            "city": "My City",
+            "state": "My State",
+            "district_id": "5698",
+            "city_id": "234",
+            "state_id": "6",
+            "open_delivery": "14:00",
+            "close_delivery": "18:00",
+            "min_order": "40.00",
+            "delivery_tax": "40.00",
+            "coordinates": "",
+            "initial_number": "0",
+            "final_number": "10000",
+            "not_delivery": "0",
+            "is_active": "1",
+            "created_at": "2014-08-12 12:34:45",
+            "updated_at": "2014-08-12 14:14:02",
+            "deleted_at": ""
+        }
+    ],
+    "request_time": 1408031100,
+    "validation": {}
+}
+```
+
+Restaurant Cupoms Collection [/v1/restaurants/{id}/cupoms]
+----------------------------------------------------------
+
+### List all Restaurant Cupoms [GET]
+
+- Response 200 (application/json)
+
+```
+{
+    "status": true,
+    "message": "Success listing Restaurant Cupoms.",
+    "data": [
+        {
+            "id": 1,
+            "code": "iuhasd6",
+            "discount": "50",
+            "type": "%",
+            "is_used": "0",
+            "date_used": "2014-08-12 18:00:09",
+            "date_limit": "2014-08-15 23:59:59",
+            "user_id": "12",
+            "food_id": "234",
+            "restaurant_id": "20",
+            "message": "Thanks for your order",
+            "is_active": "1",
+            "created_at": "2014-08-12 12:34:45",
+            "updated_at": "2014-08-12 14:14:02",
+            "deleted_at": ""
+        },
+        {
+            "id": 2,
+            "code": "iuhasd6",
+            "discount": "50",
+            "type": "%",
+            "is_used": "0",
+            "date_used": "2014-08-12 18:00:09",
+            "date_limit": "2014-08-15 23:59:59",
+            "user_id": "12",
+            "food_id": "234",
+            "restaurant_id": "20",
+            "message": "Thanks for your order",
+            "is_active": "1",
+            "created_at": "2014-08-12 12:34:45",
+            "updated_at": "2014-08-12 14:14:02",
+            "deleted_at": ""
+        },
+        {
+            "id": 3,
+            "code": "iuhasd6",
+            "discount": "50",
+            "type": "%",
+            "is_used": "0",
+            "date_used": "2014-08-12 18:00:09",
+            "date_limit": "2014-08-15 23:59:59",
+            "user_id": "12",
+            "food_id": "234",
+            "restaurant_id": "20",
+            "message": "Thanks for your order",
+            "is_active": "1",
+            "created_at": "2014-08-12 12:34:45",
+            "updated_at": "2014-08-12 14:14:02",
+            "deleted_at": ""
+        },
+        {
+            "id": 4,
+            "code": "iuhasd6",
+            "discount": "50",
+            "type": "%",
+            "is_used": "0",
+            "date_used": "2014-08-12 18:00:09",
+            "date_limit": "2014-08-15 23:59:59",
+            "user_id": "12",
+            "food_id": "234",
+            "restaurant_id": "20",
+            "message": "Thanks for your order",
+            "is_active": "1",
+            "created_at": "2014-08-12 12:34:45",
+            "updated_at": "2014-08-12 14:14:02",
+            "deleted_at": ""
+        },
+        {
+            "id": 5,
+            "code": "iuhasd6",
+            "discount": "50",
+            "type": "%",
+            "is_used": "0",
+            "date_used": "2014-08-12 18:00:09",
+            "date_limit": "2014-08-15 23:59:59",
+            "user_id": "12",
+            "food_id": "234",
+            "restaurant_id": "20",
+            "message": "Thanks for your order",
+            "is_active": "1",
+            "created_at": "2014-08-12 12:34:45",
+            "updated_at": "2014-08-12 14:14:02",
+            "deleted_at": ""
+        }
+    ],
+    "request_time": 1408031100,
+    "validation": {}
+}
+```
+
+Restaurant Business Hours Collection [/v1/restaurants/{id}/business-hours]
+--------------------------------------------------------------------------
+
+### List all Restaurant Business Hours [GET]
+
+- Response 200 (application/json)
+
+```
+{
+    "status": true,
+    "message": "Success listing Restaurant Business Hours.",
+    "data": [
+        {
+            "id": 1,
+            "open": "11:00",
+            "close": "16:00",
+            "week_day_open": "1",
+            "week_day_close": "1",
+            "user_id": "12",
+            "restaurant_id": "20",
+            "is_active": "1",
+            "created_at": "2014-08-12 12:34:45",
+            "updated_at": "2014-08-12 14:14:02",
+            "deleted_at": ""
+        },
+        {
+            "id": 2,
+            "open": "11:00",
+            "close": "16:00",
+            "week_day_open": "1",
+            "week_day_close": "1",
+            "user_id": "12",
+            "restaurant_id": "20",
+            "is_active": "1",
+            "created_at": "2014-08-12 12:34:45",
+            "updated_at": "2014-08-12 14:14:02",
+            "deleted_at": ""
+        },
+        {
+            "id": 3,
+            "open": "11:00",
+            "close": "16:00",
+            "week_day_open": "1",
+            "week_day_close": "1",
+            "user_id": "12",
+            "restaurant_id": "20",
+            "is_active": "1",
+            "created_at": "2014-08-12 12:34:45",
+            "updated_at": "2014-08-12 14:14:02",
+            "deleted_at": ""
+        },
+        {
+            "id": 4,
+            "open": "11:00",
+            "close": "16:00",
+            "week_day_open": "1",
+            "week_day_close": "1",
+            "user_id": "12",
+            "restaurant_id": "20",
+            "is_active": "1",
+            "created_at": "2014-08-12 12:34:45",
+            "updated_at": "2014-08-12 14:14:02",
+            "deleted_at": ""
+        },
+        {
+            "id": 5,
+            "open": "11:00",
+            "close": "16:00",
+            "week_day_open": "1",
+            "week_day_close": "1",
+            "user_id": "12",
+            "restaurant_id": "20",
+            "is_active": "1",
+            "created_at": "2014-08-12 12:34:45",
+            "updated_at": "2014-08-12 14:14:02",
+            "deleted_at": ""
+        }
+    ],
+    "request_time": 1408031100,
+    "validation": {}
+}
+```
+
+Restaurant Categories Collection [/v1/restaurants/{id}/categories]
+------------------------------------------------------------------
+
+### List all Restaurant Categories [GET]
+
+- Response 200 (application/json)
+
+```
+{
+    "status": true,
+    "message": "Success listing Restaurant Categories.",
+    "data": [
+        {
+            "id": 1,
+            "name": "My Category",
+            "slug": "my-category",
+            "user_id": "12",
+            "restaurant_id": "20",
+            "category_id": "123",
+            "status": "active",
+            "type": "food",
+            "is_active": "1",
+            "created_at": "2014-08-12 12:34:45",
+            "updated_at": "2014-08-12 14:14:02",
+            "deleted_at": ""
+        },
+        {
+            "id": 2,
+            "name": "My Category",
+            "slug": "my-category",
+            "user_id": "12",
+            "restaurant_id": "20",
+            "category_id": "123",
+            "status": "active",
+            "type": "food",
+            "is_active": "1",
+            "created_at": "2014-08-12 12:34:45",
+            "updated_at": "2014-08-12 14:14:02",
+            "deleted_at": ""
+        },
+        {
+            "id": 3,
+            "name": "My Category",
+            "slug": "my-category",
+            "user_id": "12",
+            "restaurant_id": "20",
+            "category_id": "123",
+            "status": "active",
+            "type": "food",
+            "is_active": "1",
+            "created_at": "2014-08-12 12:34:45",
+            "updated_at": "2014-08-12 14:14:02",
+            "deleted_at": ""
+        },
+        {
+            "id": 4,
+            "name": "My Category",
+            "slug": "my-category",
+            "user_id": "12",
+            "restaurant_id": "20",
+            "category_id": "123",
+            "status": "active",
+            "type": "food",
+            "is_active": "1",
+            "created_at": "2014-08-12 12:34:45",
+            "updated_at": "2014-08-12 14:14:02",
+            "deleted_at": ""
+        },
+        {
+            "id": 5,
+            "name": "My Category",
+            "slug": "my-category",
+            "user_id": "12",
+            "restaurant_id": "20",
+            "category_id": "123",
+            "status": "active",
+            "type": "food",
+            "is_active": "1",
+            "created_at": "2014-08-12 12:34:45",
+            "updated_at": "2014-08-12 14:14:02",
+            "deleted_at": ""
+        }
+    ],
+    "request_time": 1408031100,
+    "validation": {}
+}
+```
+
+Restaurant Reviews Collection [/v1/restaurants/{id}/reviews]
+------------------------------------------------------------
+
+### List all Restaurant Reviews [GET]
+
+- Response 200 (application/json)
+
+```
+{
+    "status": true,
+    "message": "Success listing Restaurant Reviews.",
+    "data": [
+        {
+            "id": 1,
+            "user_id": "12",
+            "restaurant_id": "20",
+            "status": "active",
+            "privacity": "_public",
+            "review": "I love this restaurant!",
+            "rate": "4",
+            "is_active": "1",
+            "created_at": "2014-08-12 12:34:45",
+            "updated_at": "2014-08-12 14:14:02",
+            "deleted_at": ""
+        },
+        {
+            "id": 2,
+            "user_id": "12",
+            "restaurant_id": "20",
+            "status": "active",
+            "privacity": "_public",
+            "review": "I love this restaurant!",
+            "rate": "4",
+            "is_active": "1",
+            "created_at": "2014-08-12 12:34:45",
+            "updated_at": "2014-08-12 14:14:02",
+            "deleted_at": ""
+        },
+        {
+            "id": 3,
+            "user_id": "12",
+            "restaurant_id": "20",
+            "status": "active",
+            "privacity": "_public",
+            "review": "I love this restaurant!",
+            "rate": "4",
+            "is_active": "1",
+            "created_at": "2014-08-12 12:34:45",
+            "updated_at": "2014-08-12 14:14:02",
+            "deleted_at": ""
+        },
+        {
+            "id": 4,
+            "user_id": "12",
+            "restaurant_id": "20",
+            "status": "active",
+            "privacity": "_public",
+            "review": "I love this restaurant!",
+            "rate": "4",
+            "is_active": "1",
+            "created_at": "2014-08-12 12:34:45",
+            "updated_at": "2014-08-12 14:14:02",
+            "deleted_at": ""
+        },
+        {
+            "id": 5,
+            "user_id": "12",
+            "restaurant_id": "20",
+            "status": "active",
+            "privacity": "_public",
+            "review": "I love this restaurant!",
+            "rate": "4",
+            "is_active": "1",
+            "created_at": "2014-08-12 12:34:45",
+            "updated_at": "2014-08-12 14:14:02",
+            "deleted_at": ""
+        }
+    ],
+    "request_time": 1408031100,
+    "validation": {}
+}
+```
+
+Restaurant Time Extensions Collection [/v1/restaurants/{id}/time-extensions]
+----------------------------------------------------------------------------
+
+### List all Restaurant Time Extensions [GET]
+
+- Response 200 (application/json)
+
+```
+{
+    "status": true,
+    "message": "Success listing Restaurant Time Extensions.",
+    "data": [
+        {
+            "id": 1,
+            "user_id": "12",
+            "restaurant_id": "20",
+            "time_added": "15m",
+            "close_time": "16:15",
+            "created_at": "2014-08-12 12:34:45",
+            "updated_at": "2014-08-12 14:14:02",
+            "deleted_at": ""
+        },
+        {
+            "id": 2,
+            "user_id": "12",
+            "restaurant_id": "20",
+            "time_added": "15m",
+            "close_time": "16:15",
+            "created_at": "2014-08-12 12:34:45",
+            "updated_at": "2014-08-12 14:14:02",
+            "deleted_at": ""
+        },
+        {
+            "id": 3,
+            "user_id": "12",
+            "restaurant_id": "20",
+            "time_added": "15m",
+            "close_time": "16:15",
+            "created_at": "2014-08-12 12:34:45",
+            "updated_at": "2014-08-12 14:14:02",
+            "deleted_at": ""
+        },
+        {
+            "id": 4,
+            "user_id": "12",
+            "restaurant_id": "20",
+            "time_added": "15m",
+            "close_time": "16:15",
+            "created_at": "2014-08-12 12:34:45",
+            "updated_at": "2014-08-12 14:14:02",
+            "deleted_at": ""
+        },
+        {
+            "id": 5,
+            "user_id": "12",
+            "restaurant_id": "20",
+            "time_added": "15m",
+            "close_time": "16:15",
+            "created_at": "2014-08-12 12:34:45",
+            "updated_at": "2014-08-12 14:14:02",
+            "deleted_at": ""
+        }
+    ],
+    "request_time": 1408031100,
+    "validation": {}
+}
+```
+
+Restaurant Transactions Collection [/v1/restaurants/{id}/transactions]
+----------------------------------------------------------------------
+
+### List all Transactions Time Extensions [GET]
+
+- Response 200 (application/json)
+
+```
+{
+    "status": true,
+    "message": "Success listing Restaurant Transactions.",
+    "data": [
+        {
+            "id": 1,
+            "order_id": "8965",
+            "restaurant_id": "20",
+            "token": "987adsba675",
+            "status": "processing",
+            "details": "waiting response",
+            "moip_tax": "2.33",
+            "value": "44.66",
+            "return_code": "a16",
+            "classification": "none",
+            "is_active": "1",
+            "created_at": "2014-08-12 12:34:45",
+            "updated_at": "2014-08-12 14:14:02",
+            "deleted_at": ""
+        },
+        {
+            "id": 2,
+            "order_id": "8965",
+            "restaurant_id": "20",
+            "token": "987adsba675",
+            "status": "processing",
+            "details": "waiting response",
+            "moip_tax": "2.33",
+            "value": "44.66",
+            "return_code": "a16",
+            "classification": "none",
+            "is_active": "1",
+            "created_at": "2014-08-12 12:34:45",
+            "updated_at": "2014-08-12 14:14:02",
+            "deleted_at": ""
+        },
+        {
+            "id": 3,
+            "order_id": "8965",
+            "restaurant_id": "20",
+            "token": "987adsba675",
+            "status": "processing",
+            "details": "waiting response",
+            "moip_tax": "2.33",
+            "value": "44.66",
+            "return_code": "a16",
+            "classification": "none",
+            "is_active": "1",
+            "created_at": "2014-08-12 12:34:45",
+            "updated_at": "2014-08-12 14:14:02",
+            "deleted_at": ""
+        },
+        {
+            "id": 4,
+            "order_id": "8965",
+            "restaurant_id": "20",
+            "token": "987adsba675",
+            "status": "processing",
+            "details": "waiting response",
+            "moip_tax": "2.33",
+            "value": "44.66",
+            "return_code": "a16",
+            "classification": "none",
+            "is_active": "1",
+            "created_at": "2014-08-12 12:34:45",
+            "updated_at": "2014-08-12 14:14:02",
+            "deleted_at": ""
+        },
+        {
+            "id": 5,
+            "order_id": "8965",
+            "restaurant_id": "20",
+            "token": "987adsba675",
+            "status": "processing",
+            "details": "waiting response",
+            "moip_tax": "2.33",
+            "value": "44.66",
+            "return_code": "a16",
+            "classification": "none",
+            "is_active": "1",
+            "created_at": "2014-08-12 12:34:45",
+            "updated_at": "2014-08-12 14:14:02",
+            "deleted_at": ""
+        }
+    ],
+    "request_time": 1408031100,
+    "validation": {}
+}
+```
+
+Group Categories
+================
+
+Categories related resources of the **Melhor Menu API**
+
+Categories Collection [/v1/categories]
+--------------------------------------
+
+### List all Categories [GET]
+
+- Response 200 (application/json)
+
+```
+{
+    "status": true,
+    "message": "Success listing Categories.",
+    "data": [
+        {
+            "id": 1,
+            "name": "My Category",
+            "slug": "my-category",
+            "user_id": "12",
+            "restaurant_id": "20",
+            "category_id": "123",
+            "status": "active",
+            "type": "food",
+            "is_active": "1",
+            "created_at": "2014-08-12 12:34:45",
+            "updated_at": "2014-08-12 14:14:02",
+            "deleted_at": ""
+        },
+        {
+            "id": 2,
+            "name": "My Category",
+            "slug": "my-category",
+            "user_id": "12",
+            "restaurant_id": "20",
+            "category_id": "123",
+            "status": "active",
+            "type": "food",
+            "is_active": "1",
+            "created_at": "2014-08-12 12:34:45",
+            "updated_at": "2014-08-12 14:14:02",
+            "deleted_at": ""
+        },
+        {
+            "id": 3,
+            "name": "My Category",
+            "slug": "my-category",
+            "user_id": "12",
+            "restaurant_id": "20",
+            "category_id": "123",
+            "status": "active",
+            "type": "food",
+            "is_active": "1",
+            "created_at": "2014-08-12 12:34:45",
+            "updated_at": "2014-08-12 14:14:02",
+            "deleted_at": ""
+        },
+        {
+            "id": 4,
+            "name": "My Category",
+            "slug": "my-category",
+            "user_id": "12",
+            "restaurant_id": "20",
+            "category_id": "123",
+            "status": "active",
+            "type": "food",
+            "is_active": "1",
+            "created_at": "2014-08-12 12:34:45",
+            "updated_at": "2014-08-12 14:14:02",
+            "deleted_at": ""
+        },
+        {
+            "id": 5,
+            "name": "My Category",
+            "slug": "my-category",
+            "user_id": "12",
+            "restaurant_id": "20",
+            "category_id": "123",
+            "status": "active",
+            "type": "food",
+            "is_active": "1",
+            "created_at": "2014-08-12 12:34:45",
+            "updated_at": "2014-08-12 14:14:02",
+            "deleted_at": ""
+        }
+
+    ],
+    "request_time": 1408031100,
+    "validation": {}
+}
+```
+
+### Create a Category [POST]
+
+#### Properties
+
+- **name** (required, string, `Foo Bar`) ... A string with the category name
+- **user_id** (required, int, `1`) ... A field with the id of user that create the new category
+- **restaurant_id** (required, int, `1`) ... A field with the id of restaurant that the new category belongs
+- **category_id** (required, int, `1`) ... A field with the id of a parent category, if is a subcategory
+- **status** (optional, string, `active`) ... A field that indicate the status of category
+- **type** (optional, string, `food`) ... A field that indicate the type of category
+- **is_active** (optional, string, `1`) ... A field that indicate if category is active or not
+
+```
+{
+    "name": "My Category",
+    "user_id": "12",
+    "restaurant_id": "20",
+    "category_id": "123",
+    "status": "active",
+    "type": "food",
+    "is_active": "1",
+}
+```
+
+- Response 201 (application/json)
+
+```
+{
+    "status": true,
+    "message": "Success creating Category.",
+    "data": [
+        {
+            "id": 5,
+            "name": "My Category",
+            "slug": "my-category",
+            "user_id": "12",
+            "restaurant_id": "20",
+            "category_id": "123",
+            "status": "active",
+            "type": "food",
+            "is_active": "1",
+            "created_at": "2014-08-12 12:34:45",
+            "updated_at": "2014-08-12 14:14:02",
+            "deleted_at": ""
+        }
+    ],
+    "request_time": 1408031100,
+    "validation": []
+}
+```
+
+Category [/v1/categories/{id}]
+---------------------------------
+
+A single Category object with all its details
+
+- Parameters
+    - id (required, number, `1`) ... Numeric `id` of the Category to perform action with. Has example value.
+
+### Retrieve a Restaurant [GET]
+
+- Response 200 (application/json)
+
+```
+{
+    "status": true,
+    "message": "Success getting Restaurant.",
+    "data": [
+        {
+            "id": 1,
+            "name": "My Category",
+            "slug": "my-category",
+            "user_id": "12",
+            "restaurant_id": "20",
+            "category_id": "123",
+            "status": "active",
+            "type": "food",
+            "is_active": "1",
+            "created_at": "2014-08-12 12:34:45",
+            "updated_at": "2014-08-12 14:14:02",
+            "deleted_at": ""
+        }
+    ],
+    "request_time": 1408031100,
+    "validation": []
+}
+```
+
+### Update a Restaurant [PUT]
+
+- Response 200
+
+### Remove a Restaurant [DELETE]
+
+- Response 204
+
+Restaurant Foods Collection [/v1/category/{id}/categories]
+--------------------------------------------------------
+
+### List all Restaurant Foods [GET]
+
+- Response 200 (application/json)
+
+```
+{
+    "status": true,
+    "message": "Success listing Restaurant Foods.",
+    "data": [
+        {
+            "id": 1,
+            "name": "My Category",
+            "slug": "my-category",
+            "user_id": "12",
+            "restaurant_id": "20",
+            "category_id": "123",
+            "status": "active",
+            "type": "food",
+            "is_active": "1",
+            "created_at": "2014-08-12 12:34:45",
+            "updated_at": "2014-08-12 14:14:02",
+            "deleted_at": ""
+        },
+        {
+            "id": 2,
+            "name": "My Category",
+            "slug": "my-category",
+            "user_id": "12",
+            "restaurant_id": "20",
+            "category_id": "123",
+            "status": "active",
+            "type": "food",
+            "is_active": "1",
+            "created_at": "2014-08-12 12:34:45",
+            "updated_at": "2014-08-12 14:14:02",
+            "deleted_at": ""
+        },
+        {
+            "id": 3,
+            "name": "My Category",
+            "slug": "my-category",
+            "user_id": "12",
+            "restaurant_id": "20",
+            "category_id": "123",
+            "status": "active",
+            "type": "food",
+            "is_active": "1",
+            "created_at": "2014-08-12 12:34:45",
+            "updated_at": "2014-08-12 14:14:02",
+            "deleted_at": ""
+        },
+        {
+            "id": 4,
+            "name": "My Category",
+            "slug": "my-category",
+            "user_id": "12",
+            "restaurant_id": "20",
+            "category_id": "123",
+            "status": "active",
+            "type": "food",
+            "is_active": "1",
+            "created_at": "2014-08-12 12:34:45",
+            "updated_at": "2014-08-12 14:14:02",
+            "deleted_at": ""
+        },
+        {
+            "id": 5,
+            "name": "My Category",
+            "slug": "my-category",
+            "user_id": "12",
+            "restaurant_id": "20",
+            "category_id": "123",
+            "status": "active",
+            "type": "food",
+            "is_active": "1",
+            "created_at": "2014-08-12 12:34:45",
+            "updated_at": "2014-08-12 14:14:02",
+            "deleted_at": ""
+        }
+    ],
+    "request_time": 1408031100,
+    "validation": {}
+}
+```
